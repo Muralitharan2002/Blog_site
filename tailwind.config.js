@@ -8,11 +8,17 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home": "url('../public/lines.svg')",
+        'bgtext': 'linear-gradient(90deg, rgba(0,44,255,1) 0%, rgba(243,29,253,1) 50%, rgba(252,69,69,1) 100%)'
       },
+      fontFamily: {
+        'mainfont': ["'Alata', sans-serif"],
+        // 'mainfont': ["'Forum', serif"],
+
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };
